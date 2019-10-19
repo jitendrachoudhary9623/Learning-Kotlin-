@@ -1,6 +1,7 @@
 //no new keyword
 
-class FirstClass{
+//class with a constructor
+class FirstClass(var constructorPrarameter:String){
     var classDataMemeber:String="";
 
     fun display(name:String){
@@ -15,7 +16,7 @@ class FirstClass{
 fun main(args:Array<String>){
 
     //object creation
-    var first=FirstClass();
+    var first=FirstClass("Ok");
 
     //calling function of the class
     first.display("My First Call to the function of the class")
@@ -25,4 +26,5 @@ fun main(args:Array<String>){
 
     //calling function which prints data memebr
     first.display()
+    print("This is a example of string interpolation ${first.constructorPrarameter}")
 }
